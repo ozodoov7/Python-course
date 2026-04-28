@@ -129,3 +129,88 @@
 # for i in books:
 #     if i.lower() == book:
 #         print(books[i])
+#     else:
+#         print("Kitob topilmadi")
+
+# extra 
+# n1
+# grades = {
+#     "Ali": 85,
+#     "Vali": 78,
+#     "Hasan": 90
+# }
+
+# a=input("Talaba ismini kiriting: ")
+# a=a.title()
+# b=int(input("Yangi bahoni kiriting: "))
+# if a in grades:
+#     grades[a]=b
+#     print(grades)
+# else:
+#     print("Bunday talaba topilmadi")
+
+# n2
+# store = {
+#     "olma": 5000,
+#     "banan": 7000
+# }
+
+# a=input("Mahsulot nomini kiriting: ")
+# b=int(input("Narxni kiriting: "))
+# if a in store:
+#     print("Bu mahsulot allaqachon bor")
+# else:
+#     store.update({a:b})
+# print(store)
+
+# n3
+# employees = {
+#     "101": "Ali",
+#     "102": "Bobur",
+#     "103": "Madina"
+# }
+
+# a=input("Xodim ID sini kiriting: ")
+# if a in employees:
+#     employees.pop(a)
+#     print(employees)
+# else:
+#     print("Bunday ID topilmadi")
+
+# n4
+# prices = {
+#     "Laptop": 700,
+#     "Phone": 350,
+#     "Camera": 500
+# }
+
+# a=max(prices.values())
+# for i in prices:
+#     if prices[i] == a:
+#         print(f"Eng qimmat mahsulot: {i}")
+#         print(f"Narxi: {prices[i]}")
+#         break
+
+# n5
+# cart = {
+#     "olma": 3,
+#     "banan": 5,
+#     "uzum": 2
+# }
+# a=sum(cart.values())
+# print(f"Jami mahsulotlar soni: {a}")
+
+# n6 xali tugatilmagan
+student = {
+    "name": "Aziz",
+    "age": 20,
+    "contact": {
+        "phone": "+998971234567",
+        "email": "aziz@mail.com"
+    }
+}
+
+for i in student:
+    for j in i:
+        if i == "contact":
+            print(f"Telefon raqami: {student.get("phone", "Topilmadi")}")
